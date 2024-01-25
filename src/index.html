@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Yo Farfalla</title>
+</head>
+<body class="font-principal">
+<header class="bg-steel-blue-500 px-3 shadow">
+    <nav class="wrapper flex h-20 items-center justify-between">
+
+        
+        <h1 class="text-perl-100 text-xl left-4">Yo Farfalla</h1>
+        
+        <input type="checkbox" id="menu" class="peer hidden">
+        <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
+
+        <div class="fixed inset-0 bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none md:p-3">
+            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-perl-100">
+                <a href="">Autor</a>
+                <a href="">Libro</a>
+                <a href="">Contacto</a>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="wrapper grid gap-8 justify-items-center items-center p-3 md:grid-cols-2 md:py-24 md:pl-10 ">
+
+        <img src="./img/book-img.png" alt="" class="w-full max-w-lg md:order-1" >
+
+        <article class="text-center space-y-8">
+            <p class="md:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut vitae quis, debitis ipsum eveniet tenetur sequi dignissimos mollitia! Itaque inventore aut molestias quis commodi recusandae, aliquam sunt expedita facere?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut vitae quis, debitis ipsum eveniet tenetur sequi dignissimos mollitia! Itaque inventore aut molestias quis commodi recusandae, aliquam sunt expedita facere?
+                
+            </p>
+            <!--<a href="" class="button mx-auto md:mx-20">Comprar</a>-->
+        </article>
+</section>
+
+<section class="wrapper h-auto bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90  grid gap-6 justify-center justify-items-center p-4 ">
+
+        <img src="./img/tablet-img.png" alt="" class="w-full max-w-lg">
+        <article class="text-center space-y-8">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptates accusamus minima voluptas neque? Dicta consectetur maiores excepturi, officiis suscipit dolorum voluptates rerum accusamus quos sequi quam, modi labore consequuntur.
+            </p>
+
+        </article>
+        
+</section>
+
+<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-steel-blue-400 grid gap-6 justify-center justify-items-center p-4 ">
+    <h2>Autor: Lorena Rios</h2>
+    <img src="./img/escritora.jpg" alt="" class="max-w-lg rounded-full w-40 h-40">
+    
+    <article class="text-center space-y-8">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptates accusamus minima voluptas neque? Dicta consectetur maiores excepturi, officiis suscipit dolorum voluptates rerum accusamus quos sequi quam, modi labore consequuntur.
+        </p>
+    </article>
+    
+</section>
+
+<footer class="bg-steel-blue-500 pb-3 py-10">
+    <section class="wrapper grid gap-6 justify-items-center footer-area md:footer-area-md">
+        <nav class="flex wrapper justify-center text-lg text-perl-100 w-4/5 [grid-area:nav] md:justify-center ">
+            <a href="">Home</a>
+            <a href="" class="px-8">Libro</a>
+            <a href="">Autor</a>
+        </nav>
+
+        <div class="flex flex-wrap gap-6 justify-between [grid-area:contacto]">
+            <a href="">
+                <img src="./img/face-icon.svg" alt="" class="w-8">
+            </a>
+            <a href="">
+                <img src="./img/insta-icon.svg" alt="" class="w-8">
+            </a>
+            <a href="">
+                <img src="./img/gmail-icon.svg" alt="" class="w-8">
+            </a>
+        </div>
+
+        <a href="" class="button2 text-lg mx-auto md:mx-20 [grid-area:boton]">Comprar</a>
+
+        <p class="text-xs text-center [grid-area:copy]">
+            © 2024 Copyright Juan Bravo. All Rights Reserved
+        </p>
+
+    </section>
+</footer>
+
+</body>
+
+</html>
