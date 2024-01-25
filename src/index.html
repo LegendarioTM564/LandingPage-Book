@@ -9,18 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Yo Farfalla</title>
 </head>
-<body class="font-principal">
+<body class="font-principal bg-perl-100">
 <header class="bg-steel-blue-500 px-3 shadow">
     <nav class="wrapper flex h-20 items-center justify-between">
 
         
-        <h1 class="text-perl-100 text-xl left-4">Yo Farfalla</h1>
+        <h1 class="text-perl-100 text-xl left-4 md:text-2xl" >Yo Farfalla</h1>
         
         <input type="checkbox" id="menu" class="peer hidden">
         <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
 
-        <div class="fixed inset-0 bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none md:p-3">
-            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-perl-100">
+        <div class="fixed inset-0 bg-gradient-to-b from-perl-100/5 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform z-30  md:static md:translate-x-0 md:bg-none md:p-3">
+            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-perl-100 md:text-xl">
                 <a href="">Autor</a>
                 <a href="">Libro</a>
                 <a href="">Contacto</a>
@@ -43,10 +43,10 @@
         </article>
 </section>
 
-<section class="wrapper h-auto bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90  grid gap-6 justify-center justify-items-center p-4 ">
+<section class="wrapper h-auto bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90  grid gap-6 justify-center justify-items-center p-4 md:grid-cols-2 md:gap-0 xl:max-w-full">
 
-        <img src="./img/tablet-img.png" alt="" class="w-full max-w-lg">
-        <article class="text-center space-y-8">
+        <img src="./img/tablet-img.png" alt="" class="w-full max-w-lg ">
+        <article class="text-center space-y-8 md:flex md:items-center md:text-lg">
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptates accusamus minima voluptas neque? Dicta consectetur maiores excepturi, officiis suscipit dolorum voluptates rerum accusamus quos sequi quam, modi labore consequuntur.
             </p>
@@ -55,11 +55,14 @@
         
 </section>
 
-<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-steel-blue-400 grid gap-6 justify-center justify-items-center p-4 ">
-    <h2>Autor: Lorena Rios</h2>
-    <img src="./img/escritora.jpg" alt="" class="max-w-lg rounded-full w-40 h-40">
+<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-steel-blue-400 grid gap-6 justify-center justify-items-center p-4  md:grid-cols-2 xl:max-w-full xl:p-10">
+    <article class="text-center space-y-2 md:space-y-1 md:order-1 md:text-lg">
+        <img src="./img/escritora.jpg" alt="" class="max-w-lg rounded-full w-40 h-40 md:w-72 md:h-72 xl:w-80 xl:h-80">
+        <h2 class="md:pt-2">Autor: Lorena Rios</h2>
+    </article>
     
-    <article class="text-center space-y-8">
+    
+    <article class="text-center space-y-8 md:text-lg md:flex md:items-center">
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptates accusamus minima voluptas neque? Dicta consectetur maiores excepturi, officiis suscipit dolorum voluptates rerum accusamus quos sequi quam, modi labore consequuntur.
         </p>
