@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Yo Farfalla</title>
 </head>
 <body class="font-principal bg-perl-100">
-<header class="bg-steel-blue-500 px-3 shadow">
+<header class="bg-transparent px-3 shadow-md shadow-steel-blue-500/50">
     <nav class="wrapper flex h-20 items-center justify-between">
 
         
-        <h1 class="text-perl-100 text-xl left-4 md:text-2xl" >Yo Farfalla</h1>
+        <h1 class="text-steel-blue-500 text-xl left-4 md:text-2xl" >Yo Farfalla</h1>
         
         <input type="checkbox" id="menu" class="peer hidden">
         <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
 
         <div class="fixed inset-0 bg-gradient-to-b from-perl-100/5 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform z-30  md:static md:translate-x-0 md:bg-none md:p-3">
-            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-perl-100 md:text-xl">
+            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-steel-blue-500 md:text-xl">
                 <a href="">Autor</a>
                 <a href="">Libro</a>
                 <a href="">Contacto</a>
@@ -29,9 +29,11 @@
     </nav>
 </header>
 
-<section class="wrapper grid gap-8 justify-items-center items-center p-3 md:grid-cols-2 md:py-24 md:pl-10 ">
+<main class="pb-10">
 
-        <img src="src/img/book-img.png" alt="" class="w-full max-w-lg md:order-1" >
+<section class="wrapper grid gap-8 justify-items-center items-center p-3 shadow-md shadow-steel-blue-500/50 md:grid-cols-2 md:py-24 md:pl-10 md:shadow-none ">
+
+        <img src="./src/img/book-img.png" alt="" class="w-full max-w-lg md:order-1" >
 
         <article class="text-center space-y-8">
             <p class="md:text-lg">
@@ -41,11 +43,17 @@
             </p>
             <!--<a href="" class="button mx-auto md:mx-20">Comprar</a>-->
         </article>
+
+        <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+            <img src="./src/img/wave.svg" alt="" class="absolute w-full -z-10 top-[18rem] shadow-md md:top-[21rem] lg:top-56">
+        </figure>
+
+
 </section>
 
 <section class="wrapper h-auto bg-gradient-to-b from-perl-100/70 to-steel-blue-300/90  grid gap-6 justify-center justify-items-center p-4 md:grid-cols-2 md:gap-0 xl:max-w-full">
 
-        <img src="src/img/tablet-img.png" alt="" class="w-full max-w-lg ">
+        <img src="./src/img/tablet-img.png" alt="" class="w-full max-w-lg ">
         <article class="text-center space-y-8 md:flex md:items-center md:text-lg">
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptates accusamus minima voluptas neque? Dicta consectetur maiores excepturi, officiis suscipit dolorum voluptates rerum accusamus quos sequi quam, modi labore consequuntur.
@@ -55,9 +63,9 @@
         
 </section>
 
-<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-steel-blue-400 grid gap-6 justify-center justify-items-center p-4  md:grid-cols-2 xl:max-w-full xl:p-10">
+<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-perl-100/70 grid gap-6 justify-center justify-items-center p-4  md:grid-cols-2 xl:max-w-full xl:p-10">
     <article class="text-center space-y-2 md:space-y-1 md:order-1 md:text-lg">
-        <img src="src/img/escritora.jpg" alt="" class="max-w-lg rounded-full w-40 h-40 md:w-72 md:h-72 xl:w-80 xl:h-80">
+        <img src="./src/img/photo.jpg" alt="" class="max-w-lg rounded-full w-40 h-40 shadow-lg shadow-steel-blue-500/90 md:w-72 md:h-72 xl:w-80 xl:h-80">
         <h2 class="md:pt-2">Autor: Lorena Rios</h2>
     </article>
     
@@ -70,7 +78,9 @@
     
 </section>
 
-<footer class="bg-steel-blue-500 pb-3 py-10">
+</main>
+
+<footer class="bg-steel-blue-400 pb-3 py-10 shadow-inner">
     <section class="wrapper grid gap-6 justify-items-center footer-area md:footer-area-md">
         <nav class="flex wrapper justify-center text-lg text-perl-100 w-4/5 [grid-area:nav] md:justify-center ">
             <a href="">Home</a>
@@ -80,13 +90,13 @@
 
         <div class="flex flex-wrap gap-6 justify-between [grid-area:contacto]">
             <a href="">
-                <img src="src/img/face-icon.svg" alt="" class="w-8">
+                <img src="./src/img/face-icon.svg" alt="" class="w-8">
             </a>
             <a href="">
-                <img src="src/img/insta-icon.svg" alt="" class="w-8">
+                <img src="./src/img/insta-icon.svg" alt="" class="w-8">
             </a>
             <a href="">
-                <img src="src/img/gmail-icon.svg" alt="" class="w-8">
+                <img src="./src/img/gmail-icon.svg" alt="" class="w-8">
             </a>
         </div>
 
