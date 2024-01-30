@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,20 @@
     <title>Yo Farfalla</title>
 </head>
 <body class="font-principal bg-perl-100">
-<header class="bg-transparent px-3 shadow-md shadow-steel-blue-500/50">
+<header id="home" class="bg-transparent px-3 shadow-md shadow-steel-blue-500/50">
     <nav class="wrapper flex h-20 items-center justify-between">
 
         
-        <h1 class="text-steel-blue-500 text-xl left-4 md:text-2xl" >Yo Farfalla</h1>
+        <h1 class="w-40 md:w-60" ><img src="./img/titulo.png" alt=""></h1>
         
         <input type="checkbox" id="menu" class="peer hidden">
         <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
 
         <div class="fixed inset-0 bg-gradient-to-b from-perl-100/5 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform z-30  md:static md:translate-x-0 md:bg-none md:p-3">
             <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-steel-blue-500 md:text-xl">
-                <a href="">Autor</a>
-                <a href="">Libro</a>
-                <a href="">Contacto</a>
+                <a href="#libro" class="md:hover:underline">Libro</a>
+                <a href="#autor" class="md:hover:underline">Autor</a>
+                <a href="#contacto" class="md:hover:underline">Contacto</a>
             </ul>
         </div>
     </nav>
@@ -31,7 +31,7 @@
 
 <main class="pb-10">
 
-<section class="wrapper grid gap-8 justify-items-center items-center p-3 shadow-md shadow-steel-blue-500/50 md:grid-cols-2 md:py-24 md:pl-10 md:shadow-none ">
+<section id="libro" class="wrapper grid gap-8 justify-items-center items-center p-3 shadow-md shadow-steel-blue-500/50 md:grid-cols-2 md:py-24 md:pl-10 md:shadow-none ">
 
         <img src="./img/book-img.png" alt="" class="w-full max-w-lg md:order-1" >
 
@@ -39,9 +39,7 @@
             <p class="md:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut vitae quis, debitis ipsum eveniet tenetur sequi dignissimos mollitia! Itaque inventore aut molestias quis commodi recusandae, aliquam sunt expedita facere?
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut vitae quis, debitis ipsum eveniet tenetur sequi dignissimos mollitia! Itaque inventore aut molestias quis commodi recusandae, aliquam sunt expedita facere?
-                
             </p>
-            <!--<a href="" class="button mx-auto md:mx-20">Comprar</a>-->
         </article>
 
         <figure class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -63,7 +61,7 @@
         
 </section>
 
-<section class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-perl-100/70 grid gap-6 justify-center justify-items-center p-4  md:grid-cols-2 xl:max-w-full xl:p-10">
+<section id="autor" class="wrapper h-auto bg-gradient-to-b  from-steel-blue-300/90 to-perl-100/70 grid gap-6 justify-center justify-items-center p-4  md:grid-cols-2 xl:max-w-full xl:p-10">
     <article class="text-center space-y-2 md:space-y-1 md:order-1 md:text-lg">
         <img src="./img/photo.jpg" alt="" class="max-w-lg rounded-full w-40 h-40 shadow-lg shadow-steel-blue-500/90 md:w-72 md:h-72 xl:w-80 xl:h-80">
         <h2 class="md:pt-2">Autor: Lorena Rios</h2>
@@ -80,27 +78,27 @@
 
 </main>
 
-<footer class="bg-steel-blue-400 pb-3 py-10 shadow-inner">
+<footer id="contacto" class="bg-steel-blue-400 pb-3 py-10 shadow-inner">
     <section class="wrapper grid gap-6 justify-items-center footer-area md:footer-area-md">
-        <nav class="flex wrapper justify-center text-lg text-perl-100 w-4/5 [grid-area:nav] md:justify-center ">
-            <a href="">Home</a>
-            <a href="" class="px-8">Libro</a>
-            <a href="">Autor</a>
+        <nav class="flex wrapper justify-center text-lg text-perl-100 w-4/5 [grid-area:nav] md:justify-center">
+            <a href="#home" class="md:hover:text-xl md:hover:underline">Home</a>
+            <a href="#libro" class="px-8 md:hover:text-xl md:hover:underline">Libro</a>
+            <a href="#autor"class="md:hover:text-xl md:hover:underline">Autor</a>
         </nav>
 
-        <div class="flex flex-wrap gap-6 justify-between [grid-area:contacto]">
-            <a href="">
+        <div class="flex flex-wrap  gap-6 justify-between [grid-area:contacto]">
+            <a href="https://www.facebook.com/lorena.rios.9809672">
                 <img src="./img/face-icon.svg" alt="" class="w-8">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/lorena.rios.9809672/">
                 <img src="./img/insta-icon.svg" alt="" class="w-8">
             </a>
-            <a href="">
+            <a href="mailto:jujoyajor1977@gmail.com">
                 <img src="./img/gmail-icon.svg" alt="" class="w-8">
             </a>
         </div>
 
-        <a href="" class="button2 text-lg mx-auto md:mx-20 [grid-area:boton]">Comprar</a>
+        <a href="https://wa.me/542994103601?text=Hola%20estoy%20interesado%20en%20comprar%20el%20libro!" class="button2 text-lg mx-auto md:mx-20 [grid-area:boton]">Comprar</a>
 
         <p class="text-xs text-center [grid-area:copy]">
             © 2024 Copyright Juan Bravo. All Rights Reserved

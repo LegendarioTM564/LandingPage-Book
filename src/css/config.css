@@ -11,7 +11,7 @@
         @apply bg-steel-blue-500 text-perl-100 block w-max py-4 px-12 rounded-full cursor-pointer;
     }
     .button2{
-        @apply bg-perl-100 text-steel-blue-500 block w-max py-4 px-12 rounded-full cursor-pointer;
+        @apply bg-perl-100 text-steel-blue-500 block w-max py-4 px-12 rounded-full cursor-pointer hover:bg-steel-blue-500 hover:text-perl-100 ;
     }
 
     
