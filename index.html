@@ -16,11 +16,10 @@
         
         <h1 class="w-40 md:w-60" ><img src="./src/img/titulo.png" alt=""></h1>
         
-        <input type="checkbox" id="menu" class="peer hidden">
-        <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
-
-        <div class="fixed inset-0 bg-gradient-to-b from-perl-100/5 to-steel-blue-300/90 translate-x-full peer-checked:translate-x-0 transition-transform z-30  md:static md:translate-x-0 md:bg-none md:p-3">
-            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-steel-blue-500 md:text-xl">
+        <button class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer z-50 md:hidden" id="menubtn"></button>
+        
+        <div class="fixed inset-0 bg-gradient-to-b from-perl-100/5 to-steel-blue-300/90 translate-x-full transition-transform z-30  md:static md:translate-x-0 md:bg-none md:p-3" id="responsive-menu">
+            <ul class="absolute inset-x-0 top-24 p-12 bg-perl-100 w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-steel-blue-700 shadow-2xl peer md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-steel-blue-500 md:text-xl" id="responsive-links">
                 <a href="#libro" class="md:hover:underline">Libro</a>
                 <a href="#autor" class="md:hover:underline">Autor</a>
                 <a href="#contacto" class="md:hover:underline">Contacto</a>
@@ -120,6 +119,7 @@
     </section>
 </footer>
 
+<script src="./src/app.js"></script>
 </body>
 
 </html>

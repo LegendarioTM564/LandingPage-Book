@@ -552,6 +552,22 @@ video {
   overflow: hidden;
 }
 
+.button {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 137 200 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  --tw-text-opacity: 1;
+  color: rgb(252 252 247 / var(--tw-text-opacity));
+}
+
 .button2 {
   display: block;
   width: -moz-max-content;
@@ -642,10 +658,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-20 {
   height: 5rem;
 }
@@ -697,6 +709,11 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-x-full {
@@ -776,6 +793,10 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-close-menu {
+  background-image: url('../img/close-menu.svg');
 }
 
 .bg-gradient-to-b {
@@ -934,12 +955,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -969,15 +984,6 @@ video {
         "copy        boton"
         ;
   }
-}
-
-.peer:checked ~ .peer-checked\:translate-x-0 {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:bg-close-menu {
-  background-image: url('../img/close-menu.svg');
 }
 
 @media (min-width: 325px) {
@@ -1058,10 +1064,6 @@ video {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-items-center {
-    justify-items: center;
   }
 
   .md\:gap-0 {
@@ -1150,11 +1152,6 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:shadow-none {

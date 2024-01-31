@@ -33,7 +33,8 @@ module.exports = {
         'mobile-m':'325px',
         'mobile-l': '425px'
       },
-    }
-  }
+    },
+  },
+  
 }
 
