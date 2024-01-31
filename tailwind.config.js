@@ -29,6 +29,10 @@ module.exports = {
         'close-menu': "url('../img/close-menu.svg')",
         'open-menu': "url('../img/open-menu.svg')",
       },
+      screens: {
+        'mobile-m':'325px',
+        'mobile-l': '425px'
+      },
     }
   }
 }
